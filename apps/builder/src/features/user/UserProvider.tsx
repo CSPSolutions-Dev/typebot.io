@@ -38,12 +38,12 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const currentColorScheme = localStorage.getItem("chakra-ui-color-mode") as
       | "light"
-      | "dark"
+      | "light"
       | null;
     if (!currentColorScheme) return;
     const systemColorScheme = window.matchMedia("(prefers-color-scheme: dark)")
       .matches
-      ? "dark"
+      ? "light"
       : "light";
     const userPrefersSystemMode =
       !localUser?.preferredAppAppearance ||

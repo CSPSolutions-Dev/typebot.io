@@ -125,17 +125,17 @@ export const colors = {
     950: "#151b56",
   },
   orange: {
-    50: "#fff4ed",
-    100: "#ffe6d4",
-    200: "#ffc8a8",
-    300: "#ffa270",
-    400: "#ff6f37",
-    500: "#ff5924",
-    600: "#f02f06",
-    700: "#c71f07",
-    800: "#9e1a0e",
-    900: "#7f190f",
-    950: "#450805",
+    50: "#eef4ff",
+    100: "#dae5ff",
+    200: "#bdd2ff",
+    300: "#90b6ff",
+    400: "#598dff",
+    500: "#3566fc",
+    600: "#1f45f1",
+    700: "#1730de",
+    800: "#1929b4",
+    900: "#1a288e",
+    950: "#151b56",
   },
   purple: {
     50: "#f4f2ff",
@@ -283,7 +283,7 @@ const Switch = createMultiStyleConfigHelpers(
   switchAnatomy.keys,
 ).defineMultiStyleConfig({
   defaultProps: {
-    colorScheme: "orange",
+    colorScheme: "blue",
   },
   baseStyle: ({ colorMode, colorScheme }) => ({
     track: {
@@ -345,22 +345,22 @@ const components = {
   },
   Spinner: {
     defaultProps: {
-      colorScheme: "orange",
+      colorScheme: "blue",
     },
   },
   NumberInput: {
     defaultProps: {
-      focusBorderColor: "orange.300",
+      focusBorderColor: "blue.300",
     },
   },
   Input: {
     defaultProps: {
-      focusBorderColor: "orange.300",
+      focusBorderColor: "blue.300",
     },
   },
   Textarea: {
     baseStyle: {
-      focusBorderColor: "orange.300",
+      focusBorderColor: "blue.300",
     },
   },
   Link: {
@@ -405,5 +405,5 @@ export const customTheme = extendTheme({
   components,
   config,
   styles,
-  shadows: { outline: "0 0 0 2px var(--chakra-colors-orange-300)" },
+  shadows: { outline: "0 0 0 2px var(--chakra-colors-blue-300)" },
 });
